@@ -41,7 +41,21 @@ ul, li { list-style: none }
 
 section, aside, menu, footer { display: block } /* -- make sure HTML5 elements are blocks */
 
-body { font-family: georgia, times, serif; }
+body {
+	font-family: georgia, times, serif;
+	color: rgb(10, 10, 10);
+	background: url('../img/groovepaper.png') repeat;
+}
+
+@media 
+(-webkit-min-device-pixel-ratio: 2), 
+(min-resolution: 192dpi) { 
+    /* Retina-specific stuff here */
+    body {
+		background: url('../img/groovepaper_2X.png') repeat;
+		background-size: 300px;
+    }
+}
 
 a { outline: 0; color: #05C; }
 
@@ -114,7 +128,7 @@ a { outline: 0; color: #05C; }
 
 /* -- let's treat white cards a little bit special */
 .white {
-    background: #FFF;
+    background: rgba(255, 255, 255, .5);
     border: 1px dashed #DDD;
 
     -moz-box-shadow:    none;
