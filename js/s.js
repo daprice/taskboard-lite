@@ -281,15 +281,12 @@ $.easing.swing = function (x, t, b, c, d, s) {
 // jQuery.fn.drop -- drops the card(s) back
 $.each([PICK, "drop"], function (i, name) {
     var pick = name == PICK;
-    function offset(i, value) {
-        return parseInt(value, 10) + (pick ? -5 : 5);
-    }
     
     $.fn[name] = function () {
         return this.each(function ($this) {
             $this = $(this);
             if ($this.hC(PICK) != pick) { // .hasClass
-                $this.tC(PICK, pick).css(TOP, offset).css(LEFT, offset); // .toggleClass
+                $this.tC(PICK, pick); // .toggleClass
             }
         });
     };
