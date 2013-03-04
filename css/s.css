@@ -67,8 +67,13 @@ a { outline: 0; color: #05C; }
     
     -webkit-transition : box-shadow 0.08s ease-out;
     -moz-transition : box-shadow 0.08s ease-out;
-    -ms-transition : box-shadow 0.08s ease;
+    -ms-transition : box-shadow 0.08s ease-out;
     transition : box-shadow 0.08s ease-out;
+    
+    -webkit-transition : opacity 0.1s ease;
+    -moz-transition : opacity 0.1s ease;
+    -ms-transition : opacity 0.1s ease;
+    transition : opacity 0.1s ease;
 
     cursor: url(grab.cur);
     cursor: -moz-grab;
@@ -137,7 +142,7 @@ a { outline: 0; color: #05C; }
     
     -webkit-transition : box-shadow 0.15s ease-out;
     -moz-transition : box-shadow 0.15s ease-out;
-    -ms-transition : box-shadow 0.15s ease;
+    -ms-transition : box-shadow 0.15s ease-out;
     transition : box-shadow 0.15s ease-out;
 }
 
