@@ -165,7 +165,7 @@ var HTML_CARD = "<section class=card><div class=text>",
 TIPS[24] = "Oh, I forgot to tell you about HEX color tags #F5A";
 
 // little easter egg ;)
-TIPS[42] = "Answer to life, the universe and everything is <b>42</b>";
+TIPS[42] = "Answer to life, the universe, and everything is <b>42</b>";
 
 
 // FUNCTIONS
