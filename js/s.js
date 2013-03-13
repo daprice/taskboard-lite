@@ -426,7 +426,7 @@ $(function () { // $(document).ready() -- theoretically not needed, as we don't 
         .dlg(CARD, MOUSEDOWN, function (mouseDownEvent) {
             // don't drag in edit mode or if a tag or action is clicked on a card
             if (!$body.hC(EDIT) && !$(mouseDownEvent.target).is(TAG + "," + ACTION)) { // .hasClass
-                var $card = $(this).to($board),
+                var $card = $(this),
                     offset = $card.offset();
                 
                 $document
