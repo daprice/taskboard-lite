@@ -45,6 +45,9 @@ body {
 	font-family: georgia, times, serif;
 	color: rgb(10, 10, 10);
 	background: url('../img/groovepaper.png') repeat;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
 }
 
 @media 
@@ -177,6 +180,10 @@ a { outline: 0; color: #05C; }
 .edit > .text {
     background: rgba(255,255,255,.5);
     outline: 1px solid #FFF;
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    cursor: text;
 }
 
 .edit.white .text {
@@ -303,6 +310,9 @@ footer {
     padding: 5px;
     font-size: .7em;
     opacity: .6;
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
 }
 
 footer:hover { opacity: 1 }
